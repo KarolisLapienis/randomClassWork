@@ -20,5 +20,19 @@ console.log(x, y, name1, name2, nameConst);
 
 console.log(name3);
 
-console.log(name4)
+console.log(name4);
+
+console.log(name1 + "sumuse" + name2);
+
+let sumusimas = name1 + "sumuse" + name2
+console.log(sumusimas);
+
+const Pi = 3.14;
+
+console.log(2 * Pi + Pi);
+
+console.log(name1 + " sumuse " + name2 + " !!!! " + (x + y) + " !!!! kartus !!!, " + name3 + " stebejo ir verke!")
+
+console.log(`${name1} sumuse ${name2} !!!! ${x + y} !!!! kartus !!!, ${name3} stebejo ir verke!`);
+
 
