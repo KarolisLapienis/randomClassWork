@@ -35,4 +35,13 @@ console.log(name1 + " sumuse " + name2 + " !!!! " + (x + y) + " !!!! kartus !!!,
 
 console.log(`${name1} sumuse ${name2} !!!! ${x + y} !!!! kartus !!!, ${name3} stebejo ir verke!`);
 
+// Strings, there are many string methods like length, slice, startsWith, endsWith and many more!!!
 
+const foxString = "The quick brown fox jumps over the lazy dog."
+
+foxString.length;
+
+console.log(foxString.length)
+
+
+// there are many ways to convert a string to number
