@@ -37,11 +37,55 @@ console.log(`${name1} sumuse ${name2} !!!! ${x + y} !!!! kartus !!!, ${name3} st
 
 // Strings, there are many string methods like length, slice, startsWith, endsWith and many more!!!
 
-const foxString = "The quick brown fox jumps over the lazy dog."
+let text1 = "The quick brown fox jumps over the lazy dog."
+let weatherToday = "Very nice weather."
+let text2 = "Very berry."
 
-foxString.length;
+let concatenatedText = text1.concat(weatherToday, text2)
 
-console.log(foxString.length)
+console.log(concatenatedText)
+
+console.log(text1.length)
+
+let textEndsWith = text1.endsWith("dog.")
+console.log(textEndsWith)
+
+let textIndexOf = text1.indexOf("quick")
+console.log(textIndexOf)
+
+let textMachWith = text1.match("jumps")
+console.log(textMachWith)
+
+let textRepeat = text1.repeat(3)
+console.log(textRepeat)
+
+let textReplace = text1.replace("fox","cat")
+console.log(textReplace)
+
+let textSearch = text1.search("dog")
+console.log(textSearch)
+
+let textSlice = text1.slice(3, 7)
+console.log(textSlice)
+
+let textSplit = text1.split("quick")
+console.log(textSplit)
+
+let textSubstring = text1.substring(5, 9)
+let toUpper = text1.charAt(5).toUpperCase()
+let subs = text1.substring(5, 9)
+let concated = toUpper.concat(subs)
+let text = text1.replace("quick", concated)
+console.log(textSubstring)
+console.log(text)
+
+
+let text4 = "        55555     55555      "
+let textTrim = text4.trim()
+console.log(textTrim)
 
 
 // there are many ways to convert a string to number
+// Javascript yra tik vienas skaiciu tipas - number
+
+
