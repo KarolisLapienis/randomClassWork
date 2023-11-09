@@ -1,5 +1,7 @@
 //"use strict";
+
 /*
+
 let x = 1;
 var y = 2;
 
@@ -83,7 +85,7 @@ console.log(text)
 let text4 = "        55555     55555      "
 let textTrim = text4.trim()
 console.log(textTrim)
-*/
+
 
 
 // there are many ways to convert a string to number
@@ -96,3 +98,5 @@ console.log(++z)
 
 console.log(typeof z)
 }
+
+*/
