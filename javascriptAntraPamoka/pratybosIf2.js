@@ -63,3 +63,59 @@ else if (statusas == 'vedes' && atlyginimas > 1500) {
 else {
     console.log('Kai uzdirbsi daugiau, ateik, pakalbesim')
 }
+
+//3 su nestinimu
+
+let name = 'John';
+let salary = 1600;
+let isMarried = true;
+
+if(isMarried){
+    if(salary >= 1500){
+        console.log(`Sveikiname, jus gavote paskola ${name}`);
+    }
+    else{
+        console.log('kai uzdirbsi daugiau, ateik, pakalbesim');
+    }
+}
+else{
+    if(salary >= 950) {
+        console.log(`Sveikiname, jus gavote paskola ${name}`);
+    }
+    else{
+        console.log('kai uzdirbsi daugiau, ateik, pakalbesim');
+    }
+}
+
+//3 su switch
+
+switch (true) {
+    case salary >= 1500 && isMarried:
+        console.log(`Sveikiname, jus gavote paskola ${name}`);
+        break
+    case salary >= 950 && !isMarried:
+        console.log(`Sveikiname, jus gavote paskola ${name}`);
+        break;
+    default:
+        console.log('kai uzdirbsi daugiau, ateik, pakalbesim');
+}
+
+//random stuff
+
+let dayTime = 'evening';
+
+switch(dayTime.toLocaleLowerCase()){
+    case 'morning':
+        console.log('Labas rytas!')
+        break
+    case 'afternoon':
+        console.log('Laba diena!')
+        break
+    case 'evening':
+        console.log('Labas vakaras!')
+        break
+    case 'naktis':
+        console.log('Labanakt!')
+    default:
+        console.log('netinkama dayTime reiksme')
+}
