@@ -4,14 +4,14 @@ CREATE TABLE clients (
     client_id bigint PRIMARY KEY AUTO_INCREMENT,
     first_name varchar(30) NOT NULL,
     last_name varchar(30) NOT NULL,
-    city date NOT NULL
+    city varchar(30) NOT NULL
 );
 
 CREATE TABLE orders (
     order_id bigint PRIMARY KEY AUTO_INCREMENT,
     order_price decimal(20, 2) NOT NULL,
-    order_date int NOT NULL,
-    client_id bigint NOT NULL
+    order_date date NOT NULL,
+    client_id bigint NOT NULL,
     FOREIGN KEY (client_id) REFERENCES clients(client_id)
 );
 
