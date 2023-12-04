@@ -1,0 +1,85 @@
+
+
+CREATE DATABASE Saskaitos;
+
+CREATE TABLE klientai (
+    kliento_id int PRIMARY KEY AUTO_INCREMENT,
+    kliento_vardas varchar(30) NOT NULL,
+    kliento_pavarde varchar(30) NOT NULL
+);
+
+CREATE TABLE uzsakymai (
+    uzsakymo_id int PRIMARY KEY AUTO_INCREMENT,
+    saskaitos_data date NOT NULL,
+    saskaitos_numeris int NOT NULL,
+    saskaitos_suma decimal(10, 2) NOT NULL,
+    kliento_id int NOT NULL,
+    FOREIGN KEY (kliento_id) REFERENCES klientai(kliento_id)
+);
+
+INSERT INTO klientai (kliento_vardas, kliento_pavarde)
+VALUES
+    ('Jonas', 'Jonaitis'),
+    ('Petras', 'Petraitis'),
+    ('Antanas', 'Antanaitis'),
+    ('Lukas', 'Lukaitis'),
+    ('Giedre', 'Giedraityte'),
+    ('Rasa', 'Rasaite'),
+    ('Mantas', 'Mantaitis'),
+    ('Laura', 'Laurinaviciute'),
+    ('Gabija', 'Gabijaite'),
+    ('Darius', 'Dariukas'),
+    ('Egle', 'Eglutaite'),
+    ('Simona', 'Simonaviciute'),
+    ('Kazimieras', 'Kazimieraitis'),
+    ('Indre', 'Indraityte'),
+    ('Tomas', 'Tomaitis'),
+    ('Jolanta', 'Jolantaite'),
+    ('Gintaras', 'Gintaraitis'),
+    ('Zygimantas', 'Zygimantaitis'),
+    ('Aurimas', 'Aurimaitis'),
+    ('Ruta', 'Rutauskaitė');
+
+INSERT INTO uzsakymai (saskaitos_data, saskaitos_numeris, saskaitos_suma, kliento_id)
+VALUES
+    ('2020-01-01', 12345678, 1500.00, 1),
+    ('2020-03-05', 23456789, 2000.50, 4),
+    ('2020-05-10', 34567890, 175.25, 6),
+    ('2020-07-15', 45678901, 3000.00, 2),
+    ('2020-09-20', 56789012, 2125.75, 8),
+    ('2020-11-25', 67890123, 3210.00, 12),
+    ('2021-01-30', 78901234, 2180.25, 5),
+    ('2021-04-05', 89012345, 1900.50, 14),
+    ('2021-06-10', 90123456, 3500.00, 3),
+    ('2021-08-15', 11223344, 2320.75, 7),
+    ('2021-10-20', 44332211, 2150.00, 11),
+    ('2022-02-25', 99887766, 2200.50, 10),
+    ('2022-04-30', 66554433, 1075.25, 16),
+    ('2022-07-05', 33221100, 3300.00, 9),
+    ('2022-09-10', 77665544, 2125.75, 15),
+    ('2022-11-15', 11002233, 3210.00, 20),
+    ('2023-01-20', 33112200, 2180.25, 18),
+    ('2023-03-25', 55443322, 1090.50, 13),
+    ('2023-06-30', 77665544, 4500.00, 17),
+    ('2023-09-05', 99887766, 3320.75, 19),
+    ('2023-11-10', 12345678, 2500.00, 12),
+    ('2024-01-15', 23456789, 3000.50, 6),
+    ('2024-03-20', 34567890, 1875.25, 18),
+    ('2024-05-25', 45678901, 3100.00, 10),
+    ('2024-07-30', 56789012, 2225.75, 15),
+    ('2024-09-05', 67890123, 2210.00, 20),
+    ('2024-11-10', 78901234, 2180.25, 2),
+    ('2025-01-15', 89012345, 2900.50, 7),
+    ('2025-03-20', 90123456, 3500.00, 13),
+    ('2025-05-25', 11223344, 2320.75, 11);
+
+
+SELECT MIN(saskaitos_suma) AS maziausia_suma
+FROM uzsakymai;
+
+SELECT kliento_vardas, kliento_pavarde
+
+SELECT CONCAT(kliento_vardas, ' ', kliento_pavarde) AS Klientas, SUM(saskaitos_suma) AS 'Isleido is viso'
+FROM klientai
+JOIN uzsakymai ON klientai.kliento_id = uzsakymai.kliento_id
+GROUP BY kliento_id
