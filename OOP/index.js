@@ -85,6 +85,10 @@ class Teacher extends Person {
 
 const teacherAldona = new Teacher('Aldona', 'Kazkokieniene', '55', 'Female', 'kazkokiene@gmail.com', 'JS', 1000)
 
+teacherAldona.setTopic('OOP')
+teacherAldona.setTopic('XXXX')
+
+
 console.log(teacherAldona)
 teacherAldona.printIfGoodWage()
 
