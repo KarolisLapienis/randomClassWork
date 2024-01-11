@@ -88,6 +88,7 @@ const teacherAldona = new Teacher('Aldona', 'Kazkokieniene', '55', 'Female', 'ka
 teacherAldona.setTopic('OOP')
 teacherAldona.setTopic('XXXX')
 
+teacherAldona.getTopics
 
 console.log(teacherAldona)
 teacherAldona.printIfGoodWage()
