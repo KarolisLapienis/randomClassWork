@@ -81,9 +81,6 @@ function createReader() {
     const newReader = new Reader(name, lastName, cardNumber);
     newReader.setBooks(booksTaken);
 
-    // Add a property to the new Reader with the name as cardNumber
-    newReader.cardNumber = cardNumber;
-
     readers.push(newReader);
     displayReaders();
 
