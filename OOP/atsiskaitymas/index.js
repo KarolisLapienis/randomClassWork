@@ -1,6 +1,6 @@
-import Bird from "./modulesJS/classBird.js"
-import Dog from "./modulesJS/classDog.js"
-import Fish from "./modulesJS/classFish.js"
+import Bird from "./classes/classBird.js"
+import Dog from "./classes/classDog.js"
+import Fish from "./classes/classFish.js"
 
 console.log(Bird, Fish, Dog);
 
