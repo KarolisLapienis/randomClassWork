@@ -30,10 +30,10 @@ const createInputField = (labelText, inputId, inputName, type) => {
 createInputField("Name", "name", "name", "text");
 createInputField("Name", "name", "name", "text");createInputField("Name", "name", "name", "text");
 
-const createButton = document.createElement("button");
-createButton.type = "button";
-createButton.textContent = "Create Reader";
+const submitButton = document.createElement("button");
+submitButton.type = "button";
+submitButton.textContent = "Submit";
 
-form.append(createButton);
+form.append(submitButton);
 formContainer.append(form);
 document.body.append(formContainer);
