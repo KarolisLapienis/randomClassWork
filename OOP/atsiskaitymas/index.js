@@ -34,6 +34,6 @@ const createButton = document.createElement("button");
 createButton.type = "button";
 createButton.textContent = "Create Reader";
 
-form.appendChild(createButton);
-formContainer.appendChild(form);
-document.body.appendChild(formContainer);
+form.append(createButton);
+formContainer.append(form);
+document.body.append(formContainer);
