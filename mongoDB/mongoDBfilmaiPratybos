@@ -1,0 +1,125 @@
+use filmai
+switched to db filmai
+db.filmai.insertMany(
+[{
+  "name": "Collector, The (Komornik)",
+  "director": "Alfred Hitchcock",
+  "year": 1910,
+  "genre": "Drama",
+  "oscars": 8
+}, {
+  "name": "Handful of Dust, A",
+  "director": "Alfred Hitchcock",
+  "year": 1963,
+  "genre": "Drama",
+  "oscars": 1
+}, {
+  "name": "Hue and Cry",
+  "director": "David Fincher",
+  "year": 1981,
+  "genre": "Action|Comedy|Crime",
+  "oscars": 1
+}, {
+  "name": "Out of Nature",
+  "director": "Francis Ford Coppola",
+  "year": 2014,
+  "genre": "(no genres listed)",
+  "oscars": 9
+}, {
+  "name": "Client, The",
+  "director": "Christopher Nolan",
+  "year": 1953,
+  "genre": "Drama|Mystery|Thriller",
+  "oscars": 6
+}, {
+  "name": "Mr. Vampire (Geung si sin sang)",
+  "director": "Francis Ford Coppola",
+  "year": 1949,
+  "genre": "Comedy|Fantasy|Horror",
+  "oscars": 4
+}, {
+  "name": "Mission Congo",
+  "director": "Coen Brothers",
+  "year": 1941,
+  "genre": "Documentary",
+  "oscars": 0
+}, {
+  "name": "Die",
+  "director": "James Cameron",
+  "year": 1942,
+  "genre": "Thriller",
+  "oscars": 6
+}, {
+  "name": "Free Will, The (Freie Wille, Der)",
+  "director": "Francis Ford Coppola",
+  "year": 2005,
+  "genre": "Crime|Drama",
+  "oscars": 2
+}, {
+  "name": "Gertie the Dinosaur",
+  "director": "Francis Ford Coppola",
+  "year": 2014,
+  "genre": "Animation|Children|Comedy",
+  "oscars": 9
+}, {
+  "name": "Love the Hard Way",
+  "director": "Martin Scorsese",
+  "year": 1995,
+  "genre": "Crime|Drama|Romance",
+  "oscars": 0
+}, {
+  "name": "Black Water",
+  "director": "Francis Ford Coppola",
+  "year": 1943,
+  "genre": "Adventure|Drama|Horror|Thriller",
+  "oscars": 2
+}, {
+  "name": "For Love and Gold (L'armata Brancaleone)",
+  "director": "Martin Scorsese",
+  "year": 1952,
+  "genre": "Adventure|Comedy",
+  "oscars": 3
+}, {
+  "name": "RFK Must Die: The Assassination of Bobby Kennedy",
+  "director": "Quentin Tarantino",
+  "year": 1937,
+  "genre": "Documentary",
+  "oscars": 5
+}, {
+  "name": "If God Is Willing and da Creek Don't Rise",
+  "director": "Steven Spielberg",
+  "year": 1938,
+  "genre": "Documentary",
+  "oscars": 2
+}, {
+  "name": "From the Journals of Jean Seberg",
+  "director": "Quentin Tarantino",
+  "year": 1993,
+  "genre": "Documentary",
+  "oscars": 4
+}, {
+  "name": "Kung Fu Panda: Secrets of the Furious Five",
+  "director": "Christopher Nolan",
+  "year": 1945,
+  "genre": "Action|Animation|Children|Comedy",
+  "oscars": 10
+}, {
+  "name": "One from the Heart",
+  "director": "Coen Brothers",
+  "year": 2004,
+  "genre": "Drama|Romance",
+  "oscars": 1
+}, {
+  "name": "Century",
+  "director": "David Fincher",
+  "year": 1992,
+  "genre": "Drama",
+  "oscars": 0
+}, {
+  "name": "Two Men Went to War",
+  "director": "Alfred Hitchcock",
+  "year": 1934,
+  "genre": "Comedy|War",
+  "oscars": 1
+}]
+)
