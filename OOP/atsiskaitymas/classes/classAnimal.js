@@ -1,9 +1,9 @@
 class Animal {
-    constructor(name, age, legsCount, color) {
+    constructor(name, age, legs, color) {
         this.name = name,
         this.age = age,
         this.color = color,
-        this.legsCount = legsCount
+        this.legs = legs
     }
 }
 
