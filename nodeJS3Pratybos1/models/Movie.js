@@ -5,11 +5,11 @@ const movieSchema = new mongoose.Schema({
         required: [true, "add title"]
     },
     releaseDate: {
-        type: String,
+        type: Date,
         required: [true, "add release date"]
     },
     genre: {
-        type: [String],
+        type: String,
         required: [true, "add genre/genres"]
     },
     oscars: {
