@@ -8,7 +8,7 @@ class BasicClassComponent extends Component {
 
     showProps() {
         console.log(this.props)
-        console.log(this.event)
+        // console.log(event)
     }
     //     {/*showProps = () => {
     //          console.log(this.props);
